@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Зависимости и кэши
+bin/
+obj/
+
+# Логи и временные файлы
+*.log
+.DS_Store (для macOS)
+
+# Wrapper
+# Игнорировать скачанные дистрибутивы gradle:
+!gradle/wrapper/gradle-wrapper.jar
+!gradlew
+!gradlew.bat
