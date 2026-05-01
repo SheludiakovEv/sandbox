@@ -18,4 +18,22 @@ public class TriangleTests {
         var t = new Triangle(30, 34, 25);
         Assertions.assertEquals(363.47618560230325, t.triangleArea());
     }
+
+    @Test
+    void cannotCreateTriangleWithNegativeSide(){
+        try {
+            new Triangle(13.0, -14.0, 15.0);
+            Assertions.fail();
+        } catch (IllegalArgumentException exception) {
+        }
+    }
+
+    @Test
+    void cannotCreateTriangleWithNegativeSideSum(){
+        try {
+            new Triangle(1.0, 1.0, 10.0);
+            Assertions.fail();
+        } catch (IllegalArgumentException exception) {
+        }
+    }
 }
