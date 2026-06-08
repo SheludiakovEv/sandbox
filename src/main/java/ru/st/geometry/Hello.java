@@ -1,8 +1,12 @@
 package ru.st.geometry;
 
+import java.io.File;
+
 public class Hello {
 
     public static void main(String[] args) {
+
+        System.out.println(new File("").getAbsoluteFile());
 
             int a = 1;
             int b = 0;
